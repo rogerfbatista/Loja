@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebApplication1"
+    "\\WebApplication1",
+    "\\WebApplication1\\packages",
+    "\\WebApplication1\\packages\\Microsoft.Net.Compilers.2.1.0"
   ],
-  "SelectedNode": "\\WebApplication1\\WebApplication1.sln",
   "PreviewInSolutionExplorer": false
 }
