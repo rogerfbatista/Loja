@@ -6,9 +6,11 @@ const debug = require('debug')('nodejs:server');
 const express = require('express');
 const app = require('../src/app');
 
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || '3000');
+ const ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
+ 
 app.set('port', port);
-
+app.set('ip', ip);
 
 const server = http.createServer(app);
 
