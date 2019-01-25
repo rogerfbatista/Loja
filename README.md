@@ -1,2 +1,2 @@
 # Loja
-loja webapi angularjs
+loja nodejs server-side
