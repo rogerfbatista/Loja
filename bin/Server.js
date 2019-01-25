@@ -13,6 +13,7 @@ app.set('port', port);
 app.set('ip', ip);
 
 
+
 console.log('Server running on http://%s:%s', process.env.OPENSHIFT_NODEJS_IP, port,process.env.OPENSHIFT_NODEJS_PORT);
 
 const server = http.createServer(app);
