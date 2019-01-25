@@ -12,6 +12,9 @@ const port = normalizePort(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT
 app.set('port', port);
 app.set('ip', ip);
 
+app.listen(port, ip);
+console.log('Server running on http://%s:%s', ip, port);
+
 const server = http.createServer(app);
 
 
