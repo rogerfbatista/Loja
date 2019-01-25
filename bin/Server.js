@@ -12,13 +12,13 @@ const port = normalizePort(process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT
 app.set('port', port);
 app.set('ip', ip);
 
-app.listen(port, ip);
-console.log('Server running on http://%s:%s', ip, port);
+
+console.log('Server running on http://%s:%s', ip, port,process.env.OPENSHIFT_NODEJS_PORT);
 
 const server = http.createServer(app);
 
 
-server.listen(port);
+server.listen(port, ip);
 server.on('error', onError);
 server.on('listening', onListening);
 console.log('API rodando na porta ' + port);
